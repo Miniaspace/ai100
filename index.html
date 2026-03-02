@@ -27,10 +27,13 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary), var(--bg-primary));
-            padding-top: 70px !important;
             color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
+
+            /* --- 核心修改：只加这两行 --- */
+            padding-top: 80px !important; /* 这个高度确保内容在导航栏下方开始显示 */
+            background-attachment: fixed; /* 确保背景在滚动时不会出现断层 */
         }
 
         .container {
